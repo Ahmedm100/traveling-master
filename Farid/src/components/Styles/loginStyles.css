@@ -1,0 +1,106 @@
+
+.sign-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('../../assets/loginBackground.png') ;
+  background-size: cover;
+  background-position: center;
+  
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.sign section {
+  width: 400px;
+  background: transparent;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  border-radius: 4px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 9);
+  border: 2px solid rgba(255, 255, 255, 0.425);
+    backdrop-filter: blur(20px);
+}
+
+.sign .content section h2 {
+  font-size: 2em;
+  color: rgba(0, 0, 0, 0.37);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.sign .content section .inputbox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sign .form .content .inputbox input {
+  margin-bottom: 10px;
+  position: relative;
+  width: 100%;
+  background: transparent;
+  border: 2px solid rgba(245, 245, 245, 0.459);
+  outline: none;
+  padding: 25px 10px 7.5px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1em;
+  text-align: left;
+  padding: 18px 8px 18px;
+}
+.sign .form .content .inputbox[type="button"] {
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.37);
+  color: #000;
+  font-weight: 600;
+  font-size: 1.35em;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+}
+
+.signbutton:hover {
+  background-color: #5cbf2a;
+}
+.signbutton:active {
+  position: relative;
+  top: 1px;
+}
+.signbutton {
+  background-color: rgba(0, 0, 0, 0.37);
+  border-radius: 8px;
+  border: 1px solid whitesmoke;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 17px;
+  margin: 0 auto;
+  width: 200px;
+  font-weight: bold;
+  padding: 13px 14px;
+  text-decoration: none;
+  text-shadow: 0px 0px 5px whitesmoke;
+}
+.signbutton:hover {
+  background-color: rgba(0, 0, 0, 0.63);
+}
+.signbutton:active {
+  position: relative;
+  top: 1px;
+}
+
+.button:active {
+  position: relative;
+  top: 1px;
+}
