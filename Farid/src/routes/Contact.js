@@ -1,8 +1,11 @@
 import React from "react";
 import Navbar from '../components/Navbar';
-import HeroImage from "../components/Heroimage";
 import Footer from '../components/Footer';
-import Form from '../components/Form'
+import Contactus from "../components/contactus";
+
+
+
+
 const Contact =()=>{
 
 return(
@@ -10,8 +13,7 @@ return(
 <div>
 
   <Navbar />
-  <HeroImage heading ='Contact.' text= 'Contact Panda Travel'/>
-  <Form />
+  <Contactus />
   <Footer /> 
 
 </div>
