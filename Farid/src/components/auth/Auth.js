@@ -1,12 +1,12 @@
 import { useNavigate } from "react-router-dom";
-import { auth } from "../../config/firebase";
+import { auth } from "../config/firebase";
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   signOut,
 } from "firebase/auth";
 import Login from "./Login";
-import Home from "../layout/Home";
+import Home from "../../routes/Home";
 import Register from "./Register";
 import { useState } from "react";
 

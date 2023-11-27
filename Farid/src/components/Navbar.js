@@ -2,6 +2,7 @@ import React,{useState} from "react";
 import { Link } from "react-router-dom";
 import {FaBars, FaTimes} from 'react-icons/fa'
 import '../components/Styles/NavbarStyles.css'
+import Login from "./auth/Login";
 
 
 const Navbar =()=>{
@@ -24,6 +25,9 @@ return(
         </li>
         <li>
             <Link to='/contact'>Contact</Link>
+        </li>
+        <li>
+            <Link to='/Login'>Login</Link>
         </li>
 
     </ul>
