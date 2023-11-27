@@ -5,6 +5,8 @@ import Pricing from "./routes/Pricing";
 import Training from './routes/Training'
 import Contact from "./routes/Contact";
 import Bookning from "./routes/Bookning";
+import Auth from "./components/auth/Auth";
+import Register from "./components/auth/Register";
 
 
 function App() {
@@ -16,6 +18,8 @@ function App() {
       <Route path="/training" element={<Training />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/bookning" element={<Bookning />} />
+      <Route path="/Login" element={<Auth />} />
+      <Route path="/Register" element={<Register />} />
       </Routes>
     </>
   );

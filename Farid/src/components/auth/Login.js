@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "../../styles/sign-page.css";
+// import "../../styles/sign-page.css";
 import Register from "./Register";
 
 const Login = ({ signIn }) => {
