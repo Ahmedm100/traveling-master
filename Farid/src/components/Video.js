@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import './VideoStyles.css'
+import '../components/Styles/VideoStyles.css'
 
 import spaceVideo from '../assets/Wtravel.mp4.mp4'
 

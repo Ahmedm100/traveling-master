@@ -8,7 +8,7 @@ position: relative;
 
 .hero-img:before{
 content:'';
-background: url('../assets/flyg\ 4.jpg') no-repeat center center/cover;
+background: url('../../assets/flyg4.jpg') no-repeat center center/cover;
 height: 350px;
 width: 100%;
 position: absolute;

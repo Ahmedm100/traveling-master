@@ -1,5 +1,5 @@
 import React from "react";
-import './Bookning1Styles.css'
+import '../components/Styles/Bookning1Styles.css'
 import { Link } from "react-router-dom";
 const Bookning1 =()=>{
 return (

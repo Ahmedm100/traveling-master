@@ -1,5 +1,5 @@
 import React from "react";
-import './TrainingStyles.css'
+import '../components/Styles/TrainingStyles.css'
 
 import { Link } from "react-router-dom";
 

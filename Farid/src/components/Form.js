@@ -1,5 +1,5 @@
 import React from "react";
-import './FormStyles.css'
+import '../components/Styles/FormStyles.css'
 import { Link } from "react-router-dom";
 const Form =()=>{
 return (
