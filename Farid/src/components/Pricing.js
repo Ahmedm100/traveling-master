@@ -35,6 +35,10 @@ return(
             <p className="btc">200 000 kr</p>
             <p>- 14 days -</p>
             <p>- All Inclusive -</p>
+             <p></p><br></br>
+           
+             <p></p><br></br>
+             
            <Link to='/bookning' className="btn">Book</Link>
 
         </div>
