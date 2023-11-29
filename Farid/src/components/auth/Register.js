@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { handleSignUp as authHandler } from "./Auth";
+import "../Styles/loginStyles.css"
 
 
 const Register = ({ switchToLogin }) => {
@@ -29,8 +30,8 @@ const Register = ({ switchToLogin }) => {
   };
 
   return (
-    <div className="signup-page">
-      <div className="signup">
+    <div className="sign-page">
+      <div className="sign">
         <div className="form">
           <div className="content">
             <form>
@@ -50,7 +51,7 @@ const Register = ({ switchToLogin }) => {
                     onChange={(e) => setPass(e.target.value)}
                   />
 
-                  <button className="signupbutton"
+                  <button className="signbutton"
                     type="button"
                     onClick={() => {
                       signUp(email, pass);

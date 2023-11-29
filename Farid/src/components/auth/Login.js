@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-// import "../../styles/sign-page.css";
-import Register from "./Register";
+import "../Styles/loginStyles.css";
+//import Register from "./Register";
+import spaceVideo from '../../assets/Wtravel.mp4.mp4';
+
 
 const Login = ({ signIn }) => {
   const [email, setEmail] = useState("");
@@ -14,8 +16,12 @@ const Login = ({ signIn }) => {
   };
 
   return (
-    <div className="login-page">
-      <div className="signin">
+    <div className="sign-page"> 
+     <video autoPlay loop muted id="video">
+
+    <source src={spaceVideo} type="video/mp4" />
+</video>
+      <div className="sign">
         <div className="form">
           <div className="content">
             <form>
@@ -35,7 +41,7 @@ const Login = ({ signIn }) => {
                     onChange={(e) => setPass(e.target.value)}
                   ></input>
                   <button
-                    className="signinbutton"
+                    className="signbutton"
                     type="button"
                     onClick={() => signIn(email, pass)}
                   >
@@ -43,7 +49,7 @@ const Login = ({ signIn }) => {
                   </button>
                   <hr />
                   <button
-                    className="signupbutton"
+                    className="signbutton"
                     type="button"
                     onClick={handleSignUpClick}
                   >
