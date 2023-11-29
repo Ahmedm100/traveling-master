@@ -8,8 +8,7 @@ import {
 import Login from "./Login";
 import Home from "../../routes/Home";
 import Register from "./Register";
-import { useState} from "react";
-
+import { useState } from "react";
 
 export const handleSignUp = async (email, pass) => {
   try {
@@ -36,7 +35,7 @@ export const Auth = () => {
   const currentUser = auth?.currentUser;
 
   const [isRegistering, setIsRegistering] = useState(false);
-  
+
   const signIn = async (email, pass) => {
     console.log("Attempting to sign in...");
     try {
@@ -50,17 +49,17 @@ export const Auth = () => {
 
   return (
     <div>
-     {!currentUser ? (
-        isRegistering ? ( 
+      {!currentUser ? (
+        isRegistering ? (
           <Register
-          handleSignUp={(email, pass) => handleSignUp(email, pass)}
-          switchToLogin={() => setIsRegistering(false)}
+            handleSignUp={(email, pass) => handleSignUp(email, pass)}
+            switchToLogin={() => setIsRegistering(false)}
           />
         ) : (
           <Login
-          signUp={handleSignUp}
-          signIn={signIn}
-          switchToRegister={() => setIsRegistering(true)}
+            signUp={handleSignUp}
+            signIn={signIn}
+            switchToRegister={() => setIsRegistering(true)}
           />
         )
       ) : (

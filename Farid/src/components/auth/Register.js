@@ -25,7 +25,9 @@ const Register = () => {
       console.log("Registration successful");
     } catch (error) {
       if (error.code === "auth/email-already-in-use") {
-        setError("Email is already in use. Please try with a different email !");
+        setError(
+          "Email is already in use. Please try with a different email !"
+        );
       } else {
         setError(error.message);
         console.error("Error during registration:", error);
@@ -75,7 +77,7 @@ const Register = () => {
                       textAlign: "center",
                     }}
                   >
-                    {error && <span style={{ color: "red"}}>{error}</span>}
+                    {error && <span style={{ color: "red" }}>{error}</span>}
                     <br></br>
                     Already have an account?
                     <span
