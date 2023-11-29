@@ -21,7 +21,7 @@ return(
             <h3>- Suite -</h3>
             <span className="bar"></span>
             <p className="btc">14000 kr</p>
-            <p>- 10 days -</p>
+            <p>- 4 days -</p>
             <p>- Regular Inclusive -</p>
             <p>- Suite with pool -</p>
             <p>- LAN tournaments -</p>
@@ -33,7 +33,7 @@ return(
             <h3>- Excutive -</h3>
             <span className="bar"></span>
             <p className="btc">20000 kr</p>
-            <p>- 14 days -</p>
+            <p>- 5 days -</p>
             <p>- All Inclusive -</p>
              <p></p><br></br>
            
