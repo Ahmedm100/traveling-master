@@ -1,7 +1,7 @@
 import React from "react"
 import '../components/Styles/FooterStyles.css'
 import {FaFacebook,FaLinkedin,  FaMailBulk,FaPhone,FaSearchLocation,FaTwitter} from 'react-icons/fa'                  
-import { Link } from "react-router-dom"
+
 const Footer=()=>{
 return(
 <div className="footer">
@@ -32,7 +32,7 @@ return(
                     <FaFacebook size={30} style={{color:'#ffffff', marginRight:'1rem'}} />
                     <FaTwitter size={30} style={{color:'#ffffff', marginRight:'1rem'}} />
                     <FaLinkedin size={30} style={{color:'#ffffff', marginRight:'1rem'}} />
-                    <Link to='http://localhost:3000'>Pandahub</Link>
+                  
 
                 </div>
                

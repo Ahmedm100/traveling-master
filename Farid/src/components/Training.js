@@ -4,7 +4,7 @@ import '../components/Styles/TrainingStyles.css'
 import { Link } from "react-router-dom";
 
 import Good from '../assets/bild1.jpeg.jpeg'
-import Good1 from '../assets/bild2.jpeg.jpg'
+import Good1 from '../assets/main.jpg'
 
 const Training =()=>{
 return(
