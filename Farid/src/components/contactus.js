@@ -1,6 +1,6 @@
 import React from "react";
 import "../components/Styles/contactus.css";
-import Image from "../assets/contact_image.jpg";
+import Image from "../assets/contact_image1.jpg";
 
 
 
