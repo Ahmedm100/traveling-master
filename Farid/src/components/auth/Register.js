@@ -1,32 +1,39 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { handleSignUp as authHandler } from "./Auth";
-import "../Styles/loginStyles.css"
+import "../Styles/loginStyles.css";
 
-
-const Register = ({ switchToLogin }) => {
+const Register = () => {
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
   const [error, setError] = useState(null);
+
   const navigate = useNavigate();
 
   const emailReg = /^\S+@\S+\.\S+$/;
 
   const signUp = async (email, pass) => {
     if (!emailReg.test(email) || pass.trim() === "") {
-      setError("Invalid email or password is required.");
+      setError("Invalid email or password is required ");
       console.log("Invalid email or password");
       return;
     }
-  
+
     try {
       await authHandler(email, pass);
       navigate("/");
       console.log("Registration successful");
     } catch (error) {
-      setError(error.message);
-      console.error("Error during registration:", error);
+      if (error.code === "auth/email-already-in-use") {
+        setError("Email is already in use. Please try with a different email !");
+      } else {
+        setError(error.message);
+        console.error("Error during registration:", error);
+      }
     }
+  };
+  const navigateToLogin = () => {
+    navigate("/login");
   };
 
   return (
@@ -37,7 +44,7 @@ const Register = ({ switchToLogin }) => {
             <form>
               <section>
                 <div className="inputbox">
-                  <h2>Register</h2>              
+                  <h2>Register</h2>
                   <input
                     placeholder="Email"
                     type="email"
@@ -47,11 +54,13 @@ const Register = ({ switchToLogin }) => {
 
                   <input
                     placeholder="Password"
-                    required type="password"
+                    required="Password"
+                    type="password"
                     onChange={(e) => setPass(e.target.value)}
                   />
 
-                  <button className="signbutton"
+                  <button
+                    className="signbutton"
                     type="button"
                     onClick={() => {
                       signUp(email, pass);
@@ -59,12 +68,26 @@ const Register = ({ switchToLogin }) => {
                   >
                     Skapa nytt konto
                   </button>
-
-                  <p style={{
-                    color: '#ffffff'
-                  }}>
+                  <hr></hr>
+                  <p
+                    style={{
+                      color: "#ffffff",
+                      textAlign: "center",
+                    }}
+                  >
+                    {error && <span style={{ color: "red"}}>{error}</span>}
+                    <br></br>
                     Already have an account?
-                    <span onClick={switchToLogin}> Login</span>
+                    <span
+                      style={{
+                        cursor: "pointer",
+                        textDecoration: "underline",
+                      }}
+                      onClick={navigateToLogin}
+                    >
+                      {" "}
+                      Login
+                    </span>
                   </p>
                 </div>
               </section>

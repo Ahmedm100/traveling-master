@@ -2,7 +2,7 @@ import React,{useState} from "react";
 import { Link } from "react-router-dom";
 import {FaBars, FaTimes} from 'react-icons/fa'
 import '../components/Styles/NavbarStyles.css'
-import Login from "./auth/Login";
+import Login from "../../src/components/auth/Login";
 
 
 const Navbar =()=>{
@@ -38,7 +38,7 @@ return(
             <Link to='/contact'>Contact</Link>
         </li>
         <li>
-            <Link to='/Login'>Login</Link>
+            <Link to='/login'>Login</Link>
         </li>
 
     </ul>

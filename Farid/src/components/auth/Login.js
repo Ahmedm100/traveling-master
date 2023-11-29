@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../Styles/loginStyles.css";
+import Navbar from "../Navbar";
 
 
 const Login = ({ signIn }) => {
@@ -14,7 +15,10 @@ const Login = ({ signIn }) => {
   };
 
   return (
+  <>
+  <Navbar />
     <div className="sign-page"> 
+    
       <div className="sign">
         <div className="form">
           <div className="content">
@@ -56,6 +60,7 @@ const Login = ({ signIn }) => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
