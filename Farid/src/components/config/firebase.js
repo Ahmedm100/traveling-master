@@ -3,13 +3,13 @@ import { getAuth } from 'firebase/auth';
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyA4MvwcBOUv0ob6Egk5ucim_YhRdtKDDdU",
-  authDomain: "spelhemsida-18335.firebaseapp.com",
-  projectId: "spelhemsida-18335",
-  storageBucket: "spelhemsida-18335.appspot.com",
-  messagingSenderId: "5446473742",
-  appId: "1:5446473742:web:8cb16271b67b2fdc82845f",
-  measurementId: "G-S6P3YB9NNP"
+  apiKey: `${process.env.REACT_APP_API_KEY}`,
+  authDomain: `${process.env.REACT_APP_AUTH_DOMAIN}`,
+  projectId: "panda-travel-8e84d",
+  storageBucket: "panda-travel-8e84d.appspot.com",
+  messagingSenderId: "600768126161",
+  appId: "1:600768126161:web:343cc4641394b3d974b9f0",
+  measurementId: "G-TWSYS2MLQ6"
 };
 
 // Initialize Firebase

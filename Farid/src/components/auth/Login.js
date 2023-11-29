@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../Styles/loginStyles.css";
-//import Register from "./Register";
-import spaceVideo from '../../assets/Wtravel.mp4.mp4';
 
 
 const Login = ({ signIn }) => {
@@ -17,10 +15,6 @@ const Login = ({ signIn }) => {
 
   return (
     <div className="sign-page"> 
-     <video autoPlay loop muted id="video">
-
-    <source src={spaceVideo} type="video/mp4" />
-</video>
       <div className="sign">
         <div className="form">
           <div className="content">
