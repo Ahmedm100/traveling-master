@@ -9,7 +9,7 @@ return(
         <div className="card">
             <h3>- Basic -</h3>
             <span className="bar"></span>
-            <p className="btc">60 000 kr</p>
+            <p className="btc">6000 kr</p>
             <p>- 3 days -</p>
             <p>- Simple Inclusive -</p>
             <p>- Standard room -</p>
@@ -20,7 +20,7 @@ return(
         <div className="card">
             <h3>- Suite -</h3>
             <span className="bar"></span>
-            <p className="btc">140 000 kr</p>
+            <p className="btc">14000 kr</p>
             <p>- 10 days -</p>
             <p>- Regular Inclusive -</p>
             <p>- Suite with pool -</p>
@@ -32,7 +32,7 @@ return(
         <div className="card">
             <h3>- Excutive -</h3>
             <span className="bar"></span>
-            <p className="btc">200 000 kr</p>
+            <p className="btc">20000 kr</p>
             <p>- 14 days -</p>
             <p>- All Inclusive -</p>
              <p></p><br></br>
