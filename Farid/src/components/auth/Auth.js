@@ -47,7 +47,7 @@ export const Auth = () => {
     try {
       await signInWithEmailAndPassword(auth, email, pass);
       console.log("Sign in successful, navigating to /Home");
-      navigate("/Home");
+      navigate("/Contact");
     } catch (err) {
       console.error(err);
     }
