@@ -1,38 +1,29 @@
-import React, { useRef } from "react";
+import React from "react";
 import "../components/Styles/contactus.css";
 import Image from "../assets/contact_image.jpg";
-import emailjs from '@emailjs/browser';
+
+
+
 
 function Contactus() {
-  const form = useRef();
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs.sendForm('service_nr8qnwe', 'template_atmlwze', form.current, 'ZHvBRDZI0mdC4Txly')
-      .then((result) => {
-        console.log(result.text);
-        e.target.reset();
-        alert('Email Sent')
-      }, (error) => {
-        console.log(error.text);
-      });
-  };
-
   return (
     <div className="contact">
-      <div className="leftSide"></div>
+      <div
+        className="leftSide"
+      ></div>
 
-      <img src={Image} alt="image" className="image" />
+        <img src={Image} alt="image" className="image"></img>
+
 
       <div className="rightSide">
         <h1> Contact Us</h1>
 
-        <form id="contact-form" method="POST" ref={form} onSubmit={sendEmail}>
-          <label htmlFor="your_name">Full Name</label>
-          <input name="your_name" placeholder="Enter full name..." type="text" />
-          <label htmlFor="your_email">Email</label>
-          <input name="your_email" placeholder="Enter email..." type="email" />
+
+        <form id="contact-form" method="POST">
+          <label htmlFor="name">Full Name</label>
+          <input name="name" placeholder="Enter full name..." type="text" />
+          <label htmlFor="email">Email</label>
+          <input name="email" placeholder="Enter email..." type="email" />
           <label htmlFor="message">Message</label>
           <textarea
             rows="6"
@@ -40,7 +31,7 @@ function Contactus() {
             name="message"
             required
           ></textarea>
-          <button type="submit">Send Message</button>
+          <button type="submit"> Send Message</button>
         </form>
       </div>
     </div>
