@@ -1,5 +1,5 @@
 import React from "react";
-import "../components/contactus.css";
+import "../components/Styles/contactus.css";
 import Image from "../assets/contact_image.jpg"
 
 
