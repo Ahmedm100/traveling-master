@@ -8,6 +8,7 @@
   background-size: cover;
   background-position: center;
   
+  
 }
 
 section {
@@ -58,6 +59,7 @@ section {
   font-size: 1em;
   text-align: left;
   padding: 18px 8px 18px;
+  
 }
 .sign .form .content .inputbox[type="button"] {
   padding: 10px;
@@ -91,6 +93,7 @@ section {
 
   text-decoration: none;
   text-shadow: 0px 0px 5px whitesmoke;
+ 
 }
 .signbutton:hover {
   background-color: rgba(0, 0, 0, 0.63);
