@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import "../components/Styles/contactus.css";
-import Image from "../assets/contact_image.jpg";
+import Image from "../assets/contact_image1.jpg";
 import emailjs from '@emailjs/browser';
 
 function Contactus() {
