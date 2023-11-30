@@ -1,28 +1,19 @@
 import React,{useState} from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {FaBars, FaTimes} from 'react-icons/fa'
 import '../components/Styles/NavbarStyles.css'
-import Login from "../../src/components/auth/Login";
-
+import { auth } from "./config/firebase";
+import { logOut } from "./auth/Auth";
 
 const Navbar =()=>{
 
-    const[click, setClick]=useState(false)
-    const handleClick =()=> setClick(!click)
-
-    const [color, setColor] =useState(false)
-    const changeColor =()=>{
-        if (window.scrollY>=100){
-            setColor(true)
-        }else{
-            setColor(false)
-        }
-    }
-
-    window.addEventListener('scroll', changeColor)
-
-return(
-<div className={color ? 'header header-bg' :'header'}>
+    const [click, setClick] = useState(false);
+    const currentUser = auth.currentUser;
+    const navigate = useNavigate();
+  
+    const handleClick = () => setClick(!click);
+return (
+<div className="header">
    <Link to='/'><h1> PANDA TRAVEL</h1></Link> 
     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
         <li>
@@ -37,21 +28,21 @@ return(
         <li>
             <Link to='/contact'>Contact</Link>
         </li>
-        <li>
-            <Link to='/login'>Login</Link>
-        </li>
-
+        {currentUser ? (
+        <button onClick={() => logOut(navigate)} className="logout-button">
+          Logout
+        </button>
+      ) : (
+        <Link to="/login">
+          <button className="login-button">Sign In</button>
+        </Link>
+      )}
     </ul>
     <div className="hamburger" onClick={handleClick}>
       {click ?(<FaTimes size={20} style ={{color:'#fff'}} />) :( <FaBars size={20} style ={{color:'#fff'}} />)}
-    
-       
-
     </div>
+    
 </div>
-
-
-);
+ )
 }
-
-export default Navbar
+export default Navbar;
