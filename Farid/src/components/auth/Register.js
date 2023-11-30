@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { handleSignUp as authHandler } from "./Auth";
 import "../Styles/loginStyles.css";
-
+import Navbar from "../Navbar";
 const Register = () => {
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
@@ -39,6 +39,8 @@ const Register = () => {
   };
 
   return (
+    <>
+    <Navbar />
     <div className="sign-page">
       <div className="sign">
         <div className="form">
@@ -98,6 +100,7 @@ const Register = () => {
         </div>
       </div>
     </div>
+  </>
   );
 };
 
