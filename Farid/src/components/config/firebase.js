@@ -3,8 +3,8 @@ import { getAuth } from 'firebase/auth';
 
 
 const firebaseConfig = {
-  apiKey: `${process.env.REACT_APP_API_KEY}`,
-  authDomain: `${process.env.REACT_APP_AUTH_DOMAIN}`,
+  apiKey: "AIzaSyD-hTo_w873JO2J561MiVIyQYxr5gBrL7k",
+  authDomain: "panda-travel-8e84d.firebaseapp.com",
   projectId: "panda-travel-8e84d",
   storageBucket: "panda-travel-8e84d.appspot.com",
   messagingSenderId: "600768126161",
