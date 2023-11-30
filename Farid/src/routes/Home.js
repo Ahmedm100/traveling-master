@@ -10,7 +10,6 @@ const Home =()=>{
 return(
 
     <div>
-   
      <Navbar />
      <Video />
      <Footer />
